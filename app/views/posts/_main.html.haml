@@ -1,1 +1,73 @@
-<メイン>
+.main
+  .main__upper
+    .main__upper__contents
+      .main__upper__contents__title
+        SS投稿アプリ
+      .main__upper__contents__text
+        お気に入りのマイファッションをみんなに自慢しよう！
+  .main__lower
+    .main__lower__title
+      SS一覧
+    .main__lower__contents
+      .main__lower__contents__title
+        新着投稿SS！！
+      .main__lower__contents__lists
+        .main__lower__contents__lists__list
+          = link_to "#" do
+            .main__lower__contents__lists__list__image
+              = image_tag "rappi1.jpg", class: "item-image"
+            .main__lower__contents__lists__list__box
+              .main__lower__contents__lists__list__box__name
+                題名
+              .main__lower__contents__lists__list__box__details
+                %ul.main__lower__contents__lists__list__box__details__box
+                  %li.main__lower__contents__lists__list__box__details__box__user
+                    投稿者
+                  %li.main__lower__contents__lists__list__box__details__box__like
+                    %i.fa.fa-heart
+                    %p.like-number　2
+        -# サーバーサイド実装まで仮
+        .main__lower__contents__lists__list
+          = link_to "#" do
+            .main__lower__contents__lists__list__image
+              = image_tag "rappi2.jpg", class: "item-image"
+            .main__lower__contents__lists__list__box
+              .main__lower__contents__lists__list__box__name
+                題名
+              .main__lower__contents__lists__list__box__details
+                %ul.main__lower__contents__lists__list__box__details__box
+                  %li.main__lower__contents__lists__list__box__details__box__user
+                    投稿者
+                  %li.main__lower__contents__lists__list__box__details__box__like
+                    %i.fa.fa-heart
+                    %p.like-number　0
+        .main__lower__contents__lists__list
+          = link_to "#" do
+            .main__lower__contents__lists__list__image
+              = image_tag "rappi3.jpg", class: "item-image"
+            .main__lower__contents__lists__list__box
+              .main__lower__contents__lists__list__box__name
+                題名
+              .main__lower__contents__lists__list__box__details
+                %ul.main__lower__contents__lists__list__box__details__box
+                  %li.main__lower__contents__lists__list__box__details__box__user
+                    投稿者
+                  %li.main__lower__contents__lists__list__box__details__box__like
+                    %i.fa.fa-heart
+                    %p.like-number　4
+        .main__lower__contents__lists__list
+          = link_to "#" do
+            .main__lower__contents__lists__list__image
+              = image_tag "rappi4.jpg", class: "item-image"
+            .main__lower__contents__lists__list__box
+              .main__lower__contents__lists__list__box__name
+                題名
+              .main__lower__contents__lists__list__box__details
+                %ul.main__lower__contents__lists__list__box__details__box
+                  %li.main__lower__contents__lists__list__box__details__box__user
+                    投稿者
+                  %li.main__lower__contents__lists__list__box__details__box__like
+                    %i.fa.fa-heart
+                    %p.like-number　0
+
+
