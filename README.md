@@ -31,7 +31,7 @@
 |outer|string|null: false|
 |base|string|null: false|
 |inner|string|null: false|
-|accessory|string|null: false|
+|accessory|string||
 |hairstyle|string|null: false|
 
 ### Association
