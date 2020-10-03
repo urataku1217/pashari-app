@@ -27,7 +27,7 @@
 |------|----|-------|
 |name|string|null: false|
 |text|string|null: false|
-|image|string||
+|image|string|null: false|
 |outer|string|null: false|
 |base|string|null: false|
 |inner|string|null: false|
