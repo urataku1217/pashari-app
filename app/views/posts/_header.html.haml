@@ -11,7 +11,7 @@
     .header__box__lawer
       %ul.header__box__lawer__left
         %li.header__box__lawer__left__category
-          = link_to "さっそく投稿する", "#", class: "header__box__lawer__left__category__btn"
+          = link_to "さっそく投稿する", new_post_path, class: "header__box__lawer__left__category__btn"
       %ul.header__box__lawer__right
         - if user_signed_in?
           %li.header__box__lawer__right__login

@@ -1,3 +1,87 @@
 * {
   box-sizing: border-box;
 }
+
+// 投稿フォーム
+.contents {
+  background-color: #fff;
+  max-width: 700px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  .container {
+    max-width: 700px;
+    &__upper {
+      &__head {
+        padding: 24px 8px;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+        h3 {
+          font-size: 100%;
+        }
+      }
+    }
+    // Title部分
+    &__main {
+      display: block;
+      padding: 40px;
+      border-top: 1px solid skyblue;
+      &__group {
+        &__input {
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          height: 48px;
+          margin-top: 16px;
+          padding: 0 16px;
+          width: 100%;
+        }
+      }
+    }
+    &__btn {
+      padding: 0 40px 40px 40px;
+      font-size: 13px;
+      &__confirm {
+        border: 1px solid skyblue;
+        margin: 40px 0 0;
+        width: 100%;
+        font-size: 24px;
+        line-height: 48px;
+        color: rgb(255, 255, 255);
+        background-color: skyblue;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    &__back {
+      &__btn {
+        text-decoration: none;
+        color: #AAAAAA;
+      }
+    }
+  }
+}
+
+// ラベル
+label{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-top: 16px;
+  span{
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 0 4px;
+  }
+}
+
+// サブヘッダー
+.sub__header{
+  text-align: center;
+  height: 128px;
+}
+.header__sub-page{
+  width: 15%;
+  margin-top: 30px;
+}
