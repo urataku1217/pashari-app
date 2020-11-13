@@ -1,15 +1,96 @@
 .post
+  -# ヘッダー
   = render 'sub-header'
 
   -# メイン
-  .contents.row
+  .contents
     .container
       = form_with(model: @post, local: true) do |form|
-        %h3
-          投稿する
-        = form.text_field :name, placeholder: "Nickname"
-        = form.text_field :image, placeholder: "Image Url"
-        = form.text_area :text, placeholder: "text" , rows: "10"
-        = form.submit "SEND"
+        .container__upper
+          %h3.container__upper__head 投稿する
+        -# Title部分
+        .container__main
+          .container__main__group
+            .container__main__group__name
+              %label
+                Title
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :name, class: "container__main__group__input", placeholder: "Title"
+        -# 画像投稿部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                画像
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :image, class: "container__main__group__input", placeholder: "Image Url"
+        -# PR説明部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                PRポイント
+                %span.form-require
+                  必須
+              %div
+                = form.text_area :text, class: "container__main__group__input", placeholder: "PRポイントを書いてみよう！" , rows: "10"
+        -# アウター部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                アウターウェア
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :outer, class: "container__main__group__input", placeholder: "アウターウェア"
+        -# ベースウェア部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                ベースウェア
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :base, class: "container__main__group__input", placeholder: "ベースウェア"
+        -# インナーウェア部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                インナーウェア
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :inner, class: "container__main__group__input", placeholder: "インナーウェア"
+        -# アクセサリー部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                アクセサリー
+              %div
+                = form.text_field :accessory, class: "container__main__group__input", placeholder: "アクセサリー"
+        -# ヘアスタイル部分
+        .container__main
+          .container__main__group
+            .container__main__group__form
+              %label
+                ヘアスタイル
+                %span.form-require
+                  必須
+              %div
+                = form.text_field :hairstyle, class: "container__main__group__input", placeholder: "ヘアスタイル"
+        -# SENDボタン部分
+        .container__btn
+          = form.submit "SEND", class: "container__btn__confirm"
+        -# 戻るボタン部分
+        .container__back
+          = link_to "トップページに戻る", "/", class:'container__back__btn'
   -# フッター
   = render 'footer'
