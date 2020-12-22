@@ -1,6 +1,7 @@
 .wrapper
   - @posts.each do |post|
-    = link_to post_path(post)
+    = link_to post_path(post) do
+      = post.name
   = render "header"
   = render "main"
   = render "footer"
